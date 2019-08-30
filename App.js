@@ -6,20 +6,10 @@
  * @flow
  */
 
-import React, {Fragment} from 'react';
+import React from 'react';
 import {StyleSheet, View, Text} from 'react-native';
 
 import {Colors} from 'react-native/Libraries/NewAppScreen';
-
-const App = () => {
-  return (
-    <View style={styles.sectionContainer}>
-      <Text style={styles.sectionDescription}>
-        Read the docs to discover what to do next:
-      </Text>
-    </View>
-  );
-};
 
 const styles = StyleSheet.create({
   scrollView: {
@@ -59,5 +49,15 @@ const styles = StyleSheet.create({
     textAlign: 'right',
   },
 });
+
+const App = () => {
+  return (
+    <View style={styles.sectionContainer}>
+      <Text style={styles.sectionDescription}>
+        Read the docs to discover what to do next:
+      </Text>
+    </View>
+  );
+};
 
 export default App;
